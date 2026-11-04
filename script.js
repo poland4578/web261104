@@ -1,5 +1,5 @@
 // script.js : 내 영화 평점 통계(콘솔판)
-// 작성자 : 전소영(2651061)
+// 작성자 : 배찬휘(2651031)
 const titles = ["극장판 치이카와: 인어 섬의 비밀", "암살자(들)", "실낙원", "타짜: 벨제붑의 노래", "클레이페이스"];
 const ratings = [7.4, 7.2, 8.0, 7.0, 7.5];
 const years = [2026, 2026, 2026, 2026, 2026];
@@ -24,10 +24,12 @@ for (let i = 0; i < ratings.length; i++) {
         count++;
     }
 }
-console.log("최고:", titles[maxindex], max);
-console.log("8점 이상:", count + "편");
+//console.log("최고:", titles[maxindex], max);
+//console.log("8점 이상:", count + "편");
+console.log(`최고: ${titles[maxindex]} (${max}점)`);
+console.log(`8점 이상: ${count}편`);
 
-for (let i = 0; i < titles.length; i++) {
+for (let i = 0; i <git add . titles.length; i++) {
     let label;
 
     if (ratings[i] >= 8.5) {
